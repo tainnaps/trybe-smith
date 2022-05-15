@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
+import { INewUser } from '../interfaces/user';
 import UserService from '../services/user';
 
 class UserController {
@@ -10,7 +11,7 @@ class UserController {
 
   public async create(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const { username, classe, level, password } = req.body;
+      const { username, classe, level, password }: INewUser = req.body;
       const token = await this.service.create({ username, classe, level, password });
 
       res.status(201).json({ token });
