@@ -13,6 +13,12 @@ class ProductService {
 
     return products;
   }
+
+  public async create(product: IProduct) {
+    const createdProduct: IProduct = await this.model.create(product);
+
+    return createdProduct;
+  }
 }
 
 export default ProductService;
