@@ -1,6 +1,6 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
 import connection from './connection';
-import IProduct from '../interfaces/IProduct';
+import { INewProduct, IProduct } from '../interfaces/product';
 
 class ProductModel {
   private connection: Pool;
@@ -16,7 +16,7 @@ class ProductModel {
     return products as IProduct[];
   }
 
-  public async create(product: IProduct): Promise<IProduct> {
+  public async create(product: INewProduct): Promise<IProduct> {
     const { name, amount } = product;
     const query = 'INSERT INTO Trybesmith.Products (name, amount) VALUES (?, ?)';
     const [{ insertId }] = await this.connection.execute<ResultSetHeader>(query, [name, amount]);
