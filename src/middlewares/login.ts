@@ -1,0 +1,18 @@
+import { Request, Response, NextFunction } from 'express';
+import loginSchema from '../schemas/login';
+import { IUserLogin } from '../interfaces/user';
+import getCustomError from '../helpers/getCustomError';
+
+const validateLogin = (req: Request, _res: Response, next: NextFunction): void => {
+  const { username, password }: IUserLogin = req.body;
+  const { error } = loginSchema.validate({ username, password });
+
+  if (error) {
+    const customError = getCustomError(error);
+    return next(customError);
+  }
+
+  next();
+};
+
+export default validateLogin;

@@ -1,6 +1,7 @@
 import UserModel from '../models/user';
-import { INewUser } from '../interfaces/user';
+import { INewUser, IUserLogin } from '../interfaces/user';
 import generateToken from '../helpers/generateToken';
+import UnauthorizedError from '../errors/UnauthorizedError';
 
 class UserService {
   private model: UserModel;
@@ -12,6 +13,18 @@ class UserService {
   public async create(user: INewUser): Promise<string> {
     const { username, id } = await this.model.create(user);
     const token = generateToken(username, id);
+
+    return token;
+  }
+
+  public async login(user: IUserLogin): Promise<string> {
+    const registeredUser = await this.model.login(user);
+
+    if (!registeredUser) {
+      throw new UnauthorizedError('Username or password invalid');
+    }
+
+    const token = generateToken(registeredUser.username, registeredUser.id);
 
     return token;
   }
