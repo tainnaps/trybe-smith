@@ -1,5 +1,12 @@
-export interface IUserLogin {
+export interface IUsername {
   username: string;
+}
+
+export interface IUserPayload extends IUsername {
+  userId: number;
+}
+
+export interface IUserLogin extends IUsername {
   password: string;
 }
 
