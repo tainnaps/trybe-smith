@@ -1,8 +1,11 @@
-export interface INewUser {
+export interface IUserLogin {
   username: string;
+  password: string;
+}
+
+export interface INewUser extends IUserLogin {
   classe: string;
   level: number;
-  password: string;
 }
 
 export interface IUser extends INewUser {
