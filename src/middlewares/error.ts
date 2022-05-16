@@ -3,8 +3,8 @@ import CustomError from '../errors/CustomError';
 
 /*
   | REFERENCES |
-  https://github.com/Microsoft/TypeScript-wiki/blob/main/Breaking-Changes.md#extending-built-ins-like-error-array-and-map-may-no-longer-work
-  https://medium.com/pagarme/minha-experi%C3%AAncia-com-error-handling-no-express-188534ae6ff2
+  Utilizei o link abaixo como referência para construir um middleware de erro que recebe erros customizados estendidos da classe Error.
+  link: https://medium.com/pagarme/minha-experi%C3%AAncia-com-error-handling-no-express-188534ae6ff2
 */
 
 export default (err: ErrorRequestHandler, _req: Request, res: Response, _next: NextFunction)
