@@ -2,6 +2,8 @@
 
 Projeto de uma API de loja de itens medievais, utilizando um banco de dados SQL, desenvolvido durante o curso de Desenvolvimento Web Full Stack da [Trybe](https://www.betrybe.com/).
 
+A API foi construída utilizando os princípios REST e seguindo a arquitetura MSC (Model, Service, Controller), aplicando, pela primeira vez, o conceito de `classe`.
+
 Suas principais funcionalidades são:
 - Cadastro, login e autenticação de pessoas usuárias
 - Busca e cadastro de productos
