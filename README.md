@@ -7,6 +7,8 @@ Suas principais funcionalidades são:
 - Leitura e cadastro de productos
 - Leitura e cadastro de pedidos
 
+⚠️ O conteúdo do aqruivo `Trybesmith.sql` é responsável pela criação do banco de dados usado pela API e foi fornecido pela [Trybe](https://www.betrybe.com/).
+
 ## Tecnologias
 As tecnologias utilizadas para o desenvolvimento da aplicação foram:
 - TypeScript
