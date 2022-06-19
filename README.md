@@ -1,15 +1,14 @@
 # Trybe Smith ⚔️
 
-Este projeto foi desenvolvido durante o curso de Desenvolvimento Web Full Stack da Trybe e consiste numa API de uma loja de itens medievais.
+Projeto de uma API de loja de itens medievais desenvolvido durante o curso de Desenvolvimento Web Full Stack da [Trybe](https://www.betrybe.com/).
 
 Suas principais funcionalidades são:
 - Cadastro, login e autenticação de pessoas usuárias
 - Leitura e cadastro de productos
-- LEitura e cadastro de pedidos
+- Leitura e cadastro de pedidos
 
 ## Tecnologias
 As tecnologias utilizadas para o desenvolvimento da aplicação foram:
-- Node.js
 - TypeScript
 - MySQL
 - Express
