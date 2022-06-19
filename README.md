@@ -4,8 +4,8 @@ Projeto de uma API de loja de itens medievais desenvolvido durante o curso de De
 
 Suas principais funcionalidades são:
 - Cadastro, login e autenticação de pessoas usuárias
-- Leitura e cadastro de productos
-- Leitura e cadastro de pedidos
+- Busca e cadastro de productos
+- Busca e cadastro de pedidos
 
 ⚠️ O conteúdo do aqruivo `Trybesmith.sql` é responsável pela criação do banco de dados usado pela API e foi fornecido pela [Trybe](https://www.betrybe.com/).
 
