@@ -11,6 +11,7 @@ Suas principais funcionalidades são:
 
 ## Tecnologias
 As tecnologias utilizadas para o desenvolvimento da aplicação foram:
+- Node.js
 - TypeScript
 - MySQL
 - Express
