@@ -1,6 +1,7 @@
 import { Secret, SignOptions } from 'jsonwebtoken';
+import 'dotenv/config';
 
-export const secret: Secret = 'supersecret';
+export const secret: Secret = process.env.SECRET || 'somesecret';
 
 export const options: SignOptions = {
   algorithm: 'HS256',
