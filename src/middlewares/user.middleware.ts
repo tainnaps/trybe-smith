@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { INewUser } from '../interfaces/user';
-import userSchema from '../schemas/user';
+import { INewUser } from '../interfaces/user.interface';
+import userSchema from '../schemas/user.schema';
 import getCustomError from '../helpers/getCustomError';
 
 const validateUser = (req: Request, _res: Response, next: NextFunction): void => {

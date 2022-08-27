@@ -1,4 +1,4 @@
-import CustomError from './CustomError';
+import CustomError from './custom.error';
 
 export default class RequiredFieldsError extends CustomError {
   constructor(message: string) {

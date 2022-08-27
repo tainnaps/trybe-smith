@@ -1,6 +1,6 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
 import connection from './connection';
-import { IDatabaseOrder, IBaseOrder } from '../interfaces/order';
+import { IDatabaseOrder, IBaseOrder } from '../interfaces/order.interface';
 
 class OrderModel {
   private connection: Pool;

@@ -1,5 +1,5 @@
 import { Request } from 'express';
-import { IUserPayload } from './user';
+import { IUserPayload } from './user.interface';
 
 /*
   | REFERENCES |

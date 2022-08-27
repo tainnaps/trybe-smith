@@ -1,6 +1,6 @@
 import { Response, NextFunction } from 'express';
-import { ICustomRequest } from '../interfaces/request';
-import UnauthorizedError from '../errors/UnauthorizedError';
+import { ICustomRequest } from '../interfaces/request.interface';
+import UnauthorizedError from '../errors/unauthorized.error';
 import verifyToken from '../helpers/verifyToken';
 
 const validateToken = (req: ICustomRequest, _res: Response, next: NextFunction): void => {

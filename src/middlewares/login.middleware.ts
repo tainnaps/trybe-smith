@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import loginSchema from '../schemas/login';
-import { IUserLogin } from '../interfaces/user';
+import loginSchema from '../schemas/login.schema';
+import { IUserLogin } from '../interfaces/user.interface';
 import getCustomError from '../helpers/getCustomError';
 
 const validateLogin = (req: Request, _res: Response, next: NextFunction): void => {

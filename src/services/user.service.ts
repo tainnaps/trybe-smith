@@ -1,7 +1,7 @@
-import UserModel from '../models/user';
-import { INewUser, IUserLogin } from '../interfaces/user';
+import UserModel from '../models/user.model';
+import { INewUser, IUserLogin } from '../interfaces/user.interface';
 import generateToken from '../helpers/generateToken';
-import UnauthorizedError from '../errors/UnauthorizedError';
+import UnauthorizedError from '../errors/unauthorized.error';
 
 class UserService {
   private model: UserModel;

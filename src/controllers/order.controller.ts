@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { ICustomRequest } from '../interfaces/request';
-import { IProductsOrder } from '../interfaces/order';
-import OrderService from '../services/order';
+import { ICustomRequest } from '../interfaces/request.interface';
+import { IProductsOrder } from '../interfaces/order.interface';
+import OrderService from '../services/order.service';
 
 class OrderController {
   private service: OrderService;

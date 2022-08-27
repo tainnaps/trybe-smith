@@ -1,5 +1,5 @@
-import { INewProduct, IProduct } from '../interfaces/product';
-import ProductModel from '../models/product';
+import { INewProduct, IProduct } from '../interfaces/product.interface';
+import ProductModel from '../models/product.model';
 
 class ProductService {
   private model: ProductModel;

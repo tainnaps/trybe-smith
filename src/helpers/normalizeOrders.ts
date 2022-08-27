@@ -1,4 +1,4 @@
-import { IDatabaseOrder, IOrder } from '../interfaces/order';
+import { IDatabaseOrder, IOrder } from '../interfaces/order.interface';
 import removeOrderDuplicates from './removeOrderDuplicates';
 
 const normalizeOrders = (orders: IDatabaseOrder[]): IOrder[] => {

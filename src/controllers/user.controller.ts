@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { INewUser, IUserLogin } from '../interfaces/user';
-import UserService from '../services/user';
+import { INewUser, IUserLogin } from '../interfaces/user.interface';
+import UserService from '../services/user.service';
 
 class UserController {
   private service: UserService;

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { INewProduct } from '../interfaces/product';
-import productSchema from '../schemas/product';
+import { INewProduct } from '../interfaces/product.interface';
+import productSchema from '../schemas/product.schema';
 import getCustomError from '../helpers/getCustomError';
 
 const validateProduct = (req: Request, _res: Response, next: NextFunction): void => {

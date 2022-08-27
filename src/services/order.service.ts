@@ -1,6 +1,6 @@
-import OrderModel from '../models/order';
-import ProductModel from '../models/product';
-import { INewOrder, IOrder } from '../interfaces/order';
+import OrderModel from '../models/order.model';
+import ProductModel from '../models/product.model';
+import { INewOrder, IOrder } from '../interfaces/order.interface';
 import normalizeOrders from '../helpers/normalizeOrders';
 
 class OrderService {

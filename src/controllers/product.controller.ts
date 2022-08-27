@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import ProductService from '../services/product';
-import { INewProduct, IProduct } from '../interfaces/product';
+import ProductService from '../services/product.service';
+import { INewProduct, IProduct } from '../interfaces/product.interface';
 
 class ProductController {
   private service: ProductService;

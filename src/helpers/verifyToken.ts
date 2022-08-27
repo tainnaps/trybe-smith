@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { secret } from '../config/jwt';
-import { IUserPayload } from '../interfaces/user';
+import { IUserPayload } from '../interfaces/user.interface';
 
 const verifyToken = (token: string): IUserPayload => {
   const payload = jwt.verify(token, secret);
