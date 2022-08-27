@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { secret } from '../config/jwt';
+import { secret } from '../config/jwt.config';
 import { IUserPayload } from '../interfaces/user.interface';
 
 const verifyToken = (token: string): IUserPayload => {
